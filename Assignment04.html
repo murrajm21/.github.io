@@ -1,12 +1,12 @@
 <!--Jayden Murray 10/14/2022 Custom Pizza Menu Assignment (Working on this makes me hungry) -->
 <!DOCTYPE html>
 <html>
-<body bgcolor=ABEbEc>
+<body bgcolor=red>
 <head>
 <title> Pizza Dacha</title>
 </head>
 <body>
-<h1><b>Pizza Dacha</b><h1>
+<h1><b>Pizza Dacha</b></h1>
 <h2>Customer Information</h2>
 <form name="Customer Information">
 <table border=6>
@@ -32,7 +32,7 @@
 </table>
 </form>
 
-<h2>Delivery</h2>
+<h2>Order Type</h2>
 <form name="Delivery">
 <input type=radio name="Delivery" value="magic"> Delivery
 <input type=radio name="Pick-Up" value="magic"> Pick-Up
@@ -48,14 +48,17 @@
 </form>
 <form>
 <h2>Pizza Size</h2>
-<Select name="choices" id="days" size=3>
+<select name="choices" id="days" size=3>
 	<option>Small</option>
 	<option>Medium</option>
 	<option>Average</option>
 	<option>Large</option>
 	<option>Extra Large</option>
 	<option>USSR-Sized</option>
-<br><br><br>
+</select>
+
+<br>
+<br>
 <h2>Crust Style</h2>
 <input type=radio name="Thin" value="magic"> Thin
 <input type=radio name="Normal" value="magic"> Normal
@@ -67,8 +70,14 @@
 <input type=Checkbox name="Beets" value="magic"> Beets
 <input type=Checkbox name="Mushrooms" value="magic"> Mushrooms
 <input type=Checkbox name="Pineapple" value="magic"> Pineapple
+<br>
+<br>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
 
 </form>
+
 
 </body>
 </html>
