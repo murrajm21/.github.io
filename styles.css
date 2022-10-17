@@ -1,0 +1,15 @@
+<!--To use, link rel="stylesheet" href="styles.css" -->
+.header
+{
+text-align:center;
+color:blue;
+font-family: sans-serif;
+}
+.green
+{
+color:green;
+}
+p
+{
+font-size:large;
+}
