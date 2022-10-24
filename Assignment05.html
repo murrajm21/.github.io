@@ -1,0 +1,83 @@
+<!--Jayden Murray 10/14/2022 Custom Pizza Menu Assignment (Working on this makes me hungry) -->
+<!DOCTYPE html>
+<html>
+<body bgcolor=red>
+<head>
+<title> Pizza Dacha</title>
+<link rel="stylesheet" href="PizzaDachaStyleSheet.css">
+</head>
+<body>
+<form name="Pizza Order Form">
+
+<h1><b>Pizza Dacha</b></h1>
+<h2>Customer Information</h2>
+<table border=10 class="pepperoni" align="center">
+	<tr>
+		<td>First Name</td>
+		<td><input type=text></td>
+	
+	</tr>
+
+	<tr>
+		<td>Last Name</td>
+		<td><input type=text></td>
+	
+	</tr>
+	<tr>
+		<td>Phone Number</td>
+		<td><input type=text></td>
+	</tr>
+	<tr>
+		<td>Street Address</td>
+		<td><input type=text></td>
+	</tr>
+</table>
+
+<h2>Order Type</h2>
+
+<input type=radio name="Order" value="Delivery"> <font class=pepperoni> Delivery </font>
+<input type=radio name="Order" value="Pick-Up"> <font class=pepperoni> Pick-Up </font>
+<input type=radio name="Order" value="Dine-In"> <font class=pepperoni> Dine-In </font>
+<br>
+<br>
+<style style=font-size:small>
+</style>
+<h2>Delivery Directions</h3>
+
+<textarea name="Delivery Directions" placeholder="Enter Driving Directions Here" rows=4 cols=40">
+</textarea>
+
+<h2>Pizza Size</h2>
+<select name="choices" id="days" size=5 class="pepperoni">
+	<option>Small</option>
+	<option>Medium</option>
+	<option>Average</option>
+	<option>Large</option>
+	<option>Extra Large</option>
+	<option>USSR-Sized</option>
+</select>
+
+<br>
+<br>
+<h2>Crust Style</h2>
+<input type=radio name="Crust" value="Thin"> <font class=pepperoni> Thin </font>
+<input type=radio name="Crust" value="Normal"> <font class=pepperoni> Normal </font>
+<input type=radio name="Crust" value="Magic"> <font class=pepperoni> Kosaken Stuffed Crust </font>
+<h2>Toppings</h2>
+<input type=Checkbox name="Cheese"  value="magic"> <font class="cheese"> Georgian Cheese </font>
+<input type=Checkbox name="Kielbasa" value="magic"> <font class="cheese">Kielbasa </font>
+<input type=Checkbox name="Pierogies" value="magic"> <font class="cheese">Pierogies</font>
+<input type=Checkbox name="Beets" value="magic"> <font class="cheese">Beets </font>
+<input type=Checkbox name="Mushrooms" value="magic"> <font class="cheese"> Mushrooms </font>
+<input type=Checkbox name="Pineapple" value="magic"> <font class="cheese"> Pineapple </font>
+<br>
+<br>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset"></input>
+
+</form>
+
+
+</body>
+</html>

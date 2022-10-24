@@ -6,9 +6,9 @@
 <title> Pizza Dacha</title>
 </head>
 <body>
+<form name="Pizza Order Form"
 <h1><b>Pizza Dacha</b></h1>
 <h2>Customer Information</h2>
-<form name="Customer Information">
 <table border=6>
 <tr>
 	<td>First Name</td>
@@ -30,13 +30,12 @@
 	<td><input type=text></td>
 </tr>
 </table>
-</form>
 
 <h2>Order Type</h2>
-<form name="Delivery">
-<input type=radio value="deliv"> Delivery
-<input type=radio value="pikup"> Pick-Up
-<input type=radio value="dinin"> Dine-In
+
+<input type=radio name="Order" value="Delivery"> Delivery
+<input type=radio name="Order" value="Pick-Up"> Pick-Up
+<input type=radio name="Order" value="Dine-In"> Dine-In
 <br>
 <br>
 <style style=font-size:small>
@@ -45,8 +44,7 @@
 
 <textarea name="Delivery Directions" placeholder="Enter Driving Directions Here" rows=4 cols=40>
 </textarea>
-</form>
-<form>
+
 <h2>Pizza Size</h2>
 <select name="choices" id="days" size=3>
 	<option>Small</option>
@@ -60,9 +58,9 @@
 <br>
 <br>
 <h2>Crust Style</h2>
-<input type=radio name="Thin" value="magic"> Thin
-<input type=radio name="Normal" value="magic"> Normal
-<input type=radio name="Stuffed" value="magic"> Kosaken Stuffed Crust
+<input type=radio name="Crust" value="Thin"> Thin
+<input type=radio name="Crust" value="Normal"> Normal
+<input type=radio name="Crust" value="Magic"> Kosaken Stuffed Crust
 <h2>Toppings</h2>
 <input type=Checkbox name="Cheese" value="magic"> Georgian Cheese
 <input type=Checkbox name="Kielbasa" value="magic"> Kielbasa
