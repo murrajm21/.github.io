@@ -1,0 +1,77 @@
+
+<!--Jayden Murray 11/2/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<head>
+<title>Animal Jumpscare Maker</title>
+<style>
+body
+{
+text-align: center
+}
+</style>
+<script>
+function ToccaD()
+ {
+ alert("That's a SCARY one!");
+ }
+function combine()
+ { 
+ document.querySelector("#scarycombo").value = 
+ document.querySelector("#color").value
+ + " "
+ + document.querySelector("#animal").value
+ } 
+function terrifying()
+ {
+document.querySelector("#headertwo").innerHTML = 
+ "What a terrifying  " + 
+document.querySelector("#animal").value + "!";
+ }
+</script>
+</head>
+<body>
+<form name="Jumpscare Maker"
+<style font-size=large>
+<h2>
+<div id=headertwo>
+<b>Pick An Animal</b>
+</div>
+</h2>
+</style>
+Animal:	 	<input type=text id="animal" onchange="terrifying();">
+<br>
+<br>
+Color: 		<input type=text id="color" onchange="combine();" >
+<br>
+<br>
+Scary Creature: 	<input type=text id="scarycombo">
+<br>
+
+
+
+
+
+
+<br>
+<br>
+
+<h2>Music Choice</h2>
+<input type=checkbox  
+onclick="ToccaD();"> Toccata and Fugue in D Minor<br>
+<input type=checkbox > Fugue in G Minor BWV 578<br>
+<input type=checkbox > Bad To The Bone<br>
+<input type=checkbox > Les Toreadors<br>
+
+<br>
+<br>
+<br>
+
+<input type="reset" value="Clear"></input>
+
+</form>
+
+
+</body>
+</html>
