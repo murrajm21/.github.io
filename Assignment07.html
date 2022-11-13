@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=”en”> 
+ <head>
+ <title></title>
+ <script>
+function doAdd()
+{
+document.querySelector("#finishedAnswer").value = 
+ parseFloat(document.querySelector("#numberOne").value)
++ parseFloat(document.querySelector("#numberTwo").value); 
+}
+function doSubtract()
+{
+document.querySelector("#finishedAnswer").value = 
+ parseFloat(document.querySelector("#numberOne").value)
+- parseFloat(document.querySelector("#numberTwo").value);
+}
+function doMultiply()
+{
+document.querySelector("#finishedAnswer").value = 
+ parseFloat(document.querySelector("#numberOne").value)
+* parseFloat(document.querySelector("#numberTwo").value);
+}
+function doDivide()
+{
+document.querySelector("#finishedAnswer").value = 
+ parseFloat(document.querySelector("#numberOne").value)
+/ parseFloat(document.querySelector("#numberTwo").value);
+}
+function red()
+{
+document.body.style.backgroundColor= "red"
+}
+function green()
+{
+document.body.style.backgroundColor= "green"
+}
+function blue()
+{
+document.body.style.backgroundColor= "blue"
+}
+function white()
+{
+document.body.style.backgroundColor= "white"
+}
+function doSum()
+        {
+           var sum=parseInt( document.querySelector("#start").value );
+           var N = parseInt( document.querySelector("#N").value );
+           for (i=1; i<=N; i++) {
+             sum += i;
+           }
+           document.querySelector("#finalSummation").innerHTML = "Here's the summation for that range:" +sum;
+        }
+ </script>
+ </head>
+ <body>
+<h1> Choose a background color </h1>
+<form name="calculations">
+
+<input type=button value="Red" onclick="red();"> 
+<input type=button value="Green"  onclick="green();">
+<input type=button value="Blue"  onclick="blue();">
+<input type=button value="White"  onclick="white();">
+<br>
+<h2> Juniata Calculator </h2>
+<input type=text id="numberOne">
+<input type=button value="+" onclick="doAdd();">
+<input type=button value="-" onclick="doSubtract();">
+<input type=button value="*" onclick="doMultiply();">
+<input type=button value="/" onclick="doDivide();">
+<input type=text id="numberTwo"> = <input type=text id="finishedAnswer">
+<br>
+<h3>Summation! You decide where it starts and where it ends </h3>
+Where would you like to start the summation? <input type=text id="start">
+<br>
+Where would you like to end the summation? <input type=text id="N">
+<br>
+<input type=button value="Lets go!" onclick="doSum();">
+<br>
+<div id="finalSummation">
+Here's the summation for that range: 
+</div>
+<input type="reset" value="Clear">
+</form>
+ </body>
+</html>
