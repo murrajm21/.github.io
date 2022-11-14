@@ -42,12 +42,13 @@ document.body.style.backgroundColor= "blue"
 function white()
 {
 document.body.style.backgroundColor= "white"
-}
+}parseInt( document.querySelector("#start").value );
 function doSum()
         {
-           var sum=parseInt( document.querySelector("#start").value );
+           var starting=parseInt( document.querySelector("#start").value );
            var N = parseInt( document.querySelector("#N").value );
-           for (i=sum; i<=N; i++) {
+		var sum = 0
+           for (i=starting; i<=N; i++) {
              sum += i;
            }
            document.querySelector("#finalSummation").innerHTML = "Here's the summation for that range:" +sum;
