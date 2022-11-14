@@ -47,7 +47,7 @@ function doSum()
         {
            var sum=parseInt( document.querySelector("#start").value );
            var N = parseInt( document.querySelector("#N").value );
-           for (i=1; i<=N; i++) {
+           for (i=sum; i<=N; i++) {
              sum += i;
            }
            document.querySelector("#finalSummation").innerHTML = "Here's the summation for that range:" +sum;
